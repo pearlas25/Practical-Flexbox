@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 9</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    height: calc(100vh - 8px);
+    gap: 4px;
+}
+
+nav, main, aside, footer {
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.red {
+    background: red;
+    height: 40px;
+    width: 40px;
+}
+
+.red-box{
+    background: red;
+    height: 25px;
+    width: 45px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+.main-content2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.aside-box {
+    display: flex;
+    border: 1px solid black;
+    width: 15vw;
+    height: 5vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    align-items: center;
+    padding: 4px;
+    row-gap: 25px;
+}
+
+.big-box {
+    border: 1px solid black;
+    height: 130px;
+    width: 1015px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 4px;
+    align-items: center;
+}
+
+.footer-box-left {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footer-box-right {
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+.footer-box {
+    background: red;
+    height: 20px;
+    width: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="red"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="red-box"></div>
+            <div class="red-box"></div>
+            <div class="red-box"></div>
+            <div class="red-box"></div>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <aside>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+            <div class="aside-box"></div>
+        </aside>
+        <div class="main-content2">
+            <main>
+                <div class="big-box"></div>
+                <div class="big-box"></div>
+            </main>
+            <footer>
+                <div class="footer-box-left">
+                    <div class="red"></div>
+                    <div class="footer-text">
+                        <div>FLEXBOX</div>
+                        <div>COPYRIGHT FLEXBOX</div>
+                    </div>
+                </div>
+        
+                <div class="footer-box-right">
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
